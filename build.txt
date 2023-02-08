@@ -1,6 +1,6 @@
 ﻿displayName=No More Tombs
 author=STS15
-version=1.5.0
+version=1.5
 hideCode=true
 hideResources=true
 homepage=https://steamcommunity.com/sharedfiles/filedetails/?id=2835407664

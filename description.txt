@@ -1,4 +1,4 @@
-This mod stops tombstones from appearing when you die.
+﻿This mod stops tombstones from appearing when you die.
 Based on the "Disable Gravestones" option from HERO's Mod.
 This plugin has been updated so that users can use it in their 1.4 games.
 
