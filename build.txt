@@ -1,8 +1,8 @@
 ﻿displayName=No More Tombs
-author=DarkLight
-version=1.2
+author=STS15
+version=1.5.0
 hideCode=true
 hideResources=true
-homepage=https://forums.terraria.org/index.php?threads/no-more-tombs.103529/
+homepage=https://steamcommunity.com/sharedfiles/filedetails/?id=2835407664
 includeSource=false
 buildIgnore = Properties\*, *.sln, *.user, *.config, README.md, LICENSE
