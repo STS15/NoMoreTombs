@@ -6,7 +6,7 @@
 		<TargetFramework>net5.0</TargetFramework>
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<LangVersion>latest</LangVersion>
-		<Authors>DarkLight</Authors>
+		<Authors>STS15</Authors>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
