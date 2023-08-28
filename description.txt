@@ -3,7 +3,9 @@ Based on the "Disable Gravestones" option from HERO's Mod.
 This plugin has been updated so that users can use it in their 1.4 games.
 
 Changelog:
-1.5.0: (LATEST UPDATE)
+1.6.0: (LATEST UPDATE)
+* Updated SDK version mod uses to follow tMod's switch to SDK6.0
+1.5.0: 
 * Updated to tModLoader 1.4.3.6
 * Added the ability to buy or craft gravestones
 1.4.0:
