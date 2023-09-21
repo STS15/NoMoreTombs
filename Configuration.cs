@@ -10,26 +10,27 @@ namespace NoMoreTombs
 		public override ConfigScope Mode => ConfigScope.ServerSide;
 
 		public static Configuration Instance;
-
+		//Label & Tooltip deprecated. Use Keys or just specify as Args: it will be interpreted as a key if beginning starts with "$".
+		//https://github.com/tModLoader/tModLoader/pull/3302
 		[DefaultValue(true)]
-		[Label("Disable Tombstones")]
-		[Tooltip("Prevents tombstones from being spawned when you die\nDefaults to true")]
+		[LabelArgs("$Disable Tombstones")]
+		[TooltipArgs("$Prevents tombstones from being spawned when you die\nDefaults to true")]
 		public bool NoTombstones;
 
 		[DefaultValue(false)]
-		[Label("Disable Death Message")]
-		[Tooltip("Prevents death messages from being shown when you die\nDefaults to false")]
+		[LabelArgs("$Disable Death Message")]
+		[TooltipArgs("$Prevents death messages from being shown when you die\nDefaults to false")]
 		public bool NoDeathMessage;
 
 		[DefaultValue(false)]
-		[Label("Enable Tombs From Town NPC Deaths")]
-		[Tooltip("Allows town NPCs to drop tombstones when they die while the player is on any difficulty\nDefaults to false")]
+		[LabelArgs("$Enable Tombs From Town NPC Deaths")]
+		[TooltipArgs("$Allows town NPCs to drop tombstones when they die while the player is on any difficulty\nDefaults to false")]
 		public bool TownNPCTombs;
 
 		[DefaultValue(false)]
-		[Label("Disable Tombs From Town NPC Deaths in Hardcore")]
-		[Tooltip("Disables town NPCs dropping tombstones when they die while the player is on hardcore mode\nTakes precedense over the previous setting\nDefaults to false")]
-		public bool NoTownNPCTombs;
+		[LabelArgs("$Disable Tombs From Town NPC Deaths in Hardcore")]
+		[TooltipArgs("$Disables town NPCs dropping tombstones when they die while the player is on hardcore mode\nTakes precedense over the previous setting\nDefaults to false")]
+        public bool NoTownNPCTombs;
 
 		private bool OldNoTombstones;
 		private bool OldNoDeathMessage;
