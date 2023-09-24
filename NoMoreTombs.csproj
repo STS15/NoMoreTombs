@@ -4,7 +4,7 @@
 	<PropertyGroup>
 		<AssemblyName>NoMoreTombs</AssemblyName>
 		<TargetFramework>net6.0</TargetFramework>
-		<PlatformTarget>AnyCPU</PlatformTarget>
+		<PlatformTarget>x64</PlatformTarget>
 		<LangVersion>latest</LangVersion>
 		<Authors>STS15</Authors>
 	</PropertyGroup>

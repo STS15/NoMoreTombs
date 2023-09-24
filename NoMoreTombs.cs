@@ -1,14 +1,12 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria;
-using Terraria.Audio;
-using Terraria.DataStructures;
-using Terraria.GameContent.Creative;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace NoMoreTombs
 {
-	public class NoMoreTombs : Mod
+    //change Mod interface implementation to ModSystem.
+    //https://forums.terraria.org/index.php?threads/how-to-fix-warning-cs0672.114350/ 
+    public class NoMoreTombs : ModSystem
 	{
 		public override void Load()
 		{

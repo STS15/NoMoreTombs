@@ -8,22 +8,23 @@ using Terraria.Localization;
 
 namespace NoMoreTombs
 {
-	public static class TombDetours
+    public static class TombDetours
 	{
 		public static void ApplyDetours()
 		{
-			On.Terraria.Player.DropTombstone += Player_DropTombstone;
-			IL.Terraria.Player.KillMe += Player_KillMe;
-			IL.Terraria.NPC.checkDead += NPC_checkDead;
+            On_Player.DropTombstone += Player_DropTombstone;
+            IL_Player.KillMe += Player_KillMe;
+            IL_NPC.checkDead += NPC_checkDead;
+			//Namespace change for On & IL to On_Player & IL_Player - https://github.com/tModLoader/tModLoader/wiki/Update-Migration-Guide#v2023x-144
 		}
 
-		private static void Player_DropTombstone(On.Terraria.Player.orig_DropTombstone orig, Player self, int coinsOwned, NetworkText deathText, int hitDirection)
-		{
-			if (!Configuration.Instance.NoTombstones)
+        private static void Player_DropTombstone(On_Player.orig_DropTombstone orig, Player self, long coinsOwned, NetworkText deathText, int hitDirection)
+        {
+            if (!Configuration.Instance.NoTombstones)
 			{
 				orig(self, coinsOwned, deathText, hitDirection);
 			}
-		}
+        }
 
 		private static void Player_KillMe(ILContext il)
 		{
